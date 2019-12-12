@@ -1,0 +1,26 @@
+﻿<Window x:Class="SystemBank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemBank"
+        mc:Ignorable="d"
+        Title="Банковская система" Height="249.186" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="370*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FF9ED683" HorizontalAlignment="Left" Height="50" Stroke="#FF9ED683" VerticalAlignment="Top" Width="792"/>
+        <Label Content="Банковская система" FontSize="25" HorizontalAlignment="Left" Margin="257,2,0,0" VerticalAlignment="Top" Height="50" Width="259" FontWeight="Bold" FontFamily="Comic Sans MS" Grid.Row="1"/>
+        <Label Content="Логин:" FontSize="15" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="67" Margin="0,43,0,0"/>
+        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="23" Margin="93,48,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Бюджет:" FontSize="15" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="67" Margin="0,78,0,0"/>
+        <TextBox x:Name="cashBox" HorizontalAlignment="Left" Height="23" Margin="93,85,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Button Name="addThousandBtn" Content="Пополнить счёт на 1000$" HorizontalAlignment="Left" Margin="316,48,0,0" Grid.Row="1" VerticalAlignment="Top" Width="168" Height="60" FontWeight="Bold" Click="AddThousand"/>
+        <Button Name="addFiveHndrBtn" Content="Пополнить счёт на 500$" HorizontalAlignment="Left" Margin="316,113,0,0" Grid.Row="1" VerticalAlignment="Top" Width="168" Height="60" FontWeight="Bold" Click="AddFiveHndr"/>
+        <Button Name="minusThousanBtn" Content="Снять с счёта 1000 $"  HorizontalAlignment="Left" Margin="614,48,0,0" Grid.Row="1" VerticalAlignment="Top" Width="168" Height="60" FontWeight="Bold" Click="MinusThousand"/>
+        <Button Name="minusFiveHndrBtn" Content="Снять с счёта 500 $" HorizontalAlignment="Left" Margin="614,113,0,0" Grid.Row="1" VerticalAlignment="Top" Width="168" Height="60" FontWeight="Bold" Click="MinusFiveHndr"/>
+
+    </Grid>
+</Window>
